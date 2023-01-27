@@ -20,7 +20,7 @@ public class Library extends Book {
         SetBookAuthor(bookAuthor);
         SetBookName(bookName);
         SetBookLang(bookLang);
-        lb.bAuthor = GetBookAutor();
+        lb.bAuthor = GetBookAuthor();
         lb.bName = GetBookName();
         lb.bLang = GetBookLang();
         listBook.add(lb);

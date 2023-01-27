@@ -13,4 +13,11 @@ public class view {
             System.out.println(a.bAuthor + " " + a.bName);
         }
     }
+
+    public static void petsView(Persona root) {
+        System.out.println("Животные " + root.PersPet.petsName);
+        for (ListPets a : root.PersPet.listNamePets) {
+            System.out.println(a.petsName + " " + a.petsSex + " " + a.petsAge);
+        }
+    }
 }

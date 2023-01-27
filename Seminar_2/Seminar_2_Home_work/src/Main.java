@@ -13,14 +13,14 @@ public class Main {
 //внедрению и инверсии зависимостей.
     public static void main(String[] args) {
 
-        Persona father = new Persona("Иван", "Мужсой", 35, "lib1");
-        Persona son = new Persona("Сергей", "Мужской", 5, "lib2");
-
-        Pets dog = new Pets("Рекс", "Мужской", 4);
-        Pets cat = new Pets("Барсик", "Мужкой", 3);
+        Persona father = new Persona("Иван", "Мужсой", 35, "lib1", "Собаки");
+        Persona son = new Persona("Сергей", "Мужской", 5, "lib2", "Кошки");
 
         father.PersLibr.AddBook("Пушкин", "Собрание сочинений", "RU");
         father.PersLibr.AddBook("Носов", "Незнайка на луне", "RU");
+
+        father.PersPet.addPets("Рекс", "Мужской", 4);
+        son.PersPet.addPets("Барсик", "Мужкой", 3);
 
         son.PersLibr.AddBook("Народное авторство", "Азбука", "RU");
         father.addName(son);
@@ -31,6 +31,14 @@ public class Main {
 
         System.out.println("*".repeat(15));
         view.bookView(son);
+
+        System.out.println("*".repeat(15));
+
+        view.petsView(father);
+
+        System.out.println("*".repeat(15));
+
+        view.petsView(son);
 
     }
 }

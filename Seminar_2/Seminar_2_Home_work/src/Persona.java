@@ -4,12 +4,15 @@ import java.util.List;
 
 public class Persona extends Human {
     public Library PersLibr;
+    public Pets PersPet;
 
-    public Persona(String name, String sex, int age, String persLibr) {
+    public Persona(String name, String sex, int age, String persLibr, String persPet) {
         setSex(sex);
         setName(name);
         setAge(age);
         this.PersLibr = new Library(persLibr);
+        this.PersPet = new Pets(persPet);
+
     }
 
     ArrayList<Persona> listName = new ArrayList<>();

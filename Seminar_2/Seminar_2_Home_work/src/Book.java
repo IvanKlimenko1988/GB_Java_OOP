@@ -17,7 +17,7 @@ public abstract class Book {
         this.BookLang = bookLang;
     }
 
-    public String GetBookAutor() {
+    public String GetBookAuthor() {
         return BookAuthor;
     }
 
