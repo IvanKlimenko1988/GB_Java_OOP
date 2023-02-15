@@ -1,3 +1,5 @@
+package Seminar_6_SOLID;
+
 public class View {
     public static void depView(Group root){
         System.out.println("Название отдела" +" "+ root.deptName);
